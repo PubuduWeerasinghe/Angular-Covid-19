@@ -1,0 +1,21 @@
+  .cases{
+width: 50px;
+height: 50px;
+  }
+
+.value{
+  font-size: small;
+}
+
+.container{
+  max-width: 1500px
+}
+
+.total{
+  text-align: center;
+}
+
+.topic{
+  text-align: center;
+  width: 100%;
+}

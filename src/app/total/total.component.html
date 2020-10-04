@@ -1,0 +1,68 @@
+    <br>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h1 class="display-4 topic"><img class="cases" src="../../assets/title.png"> COVID-19 : Live Situational Analysis Dashboard</h1>
+          </div>
+        </div>
+      </div> 
+        <br>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm total">
+            <div class="ui blue statistic ">
+                <div class="label">
+                    Total Cases <img class="cases" src="../../assets/Cases.gif">
+                </div>
+                <div class="value">
+                    {{TotalCases}}
+                </div>
+              </div>
+          </div>
+          <div class="col-sm total">
+            <div class="ui red statistic">
+                <div class="label">
+                    Total Deaths <img class="cases" src="../../assets/deaths.gif">
+                </div>
+                <div class="value">
+                    {{TotalDeaths}}
+                </div>
+              </div>
+          </div>
+          <div class="col-sm total">
+            <div class="ui green statistic">
+                <div class="label">
+                    Total Recovered <img class="cases" src="../../assets/recovered.gif">
+                </div>
+                <div class="value">
+                    {{TotalRecovered}}
+                </div>
+            </div>
+          </div>
+          <div class="col-sm total">
+            <div class="ui orange statistic">
+                <div class="label">
+                    Total Active <img class="cases" src="../../assets/active.gif">
+                </div>
+                <div class="value">
+                    {{TotalActive}}
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 total">
+              <p><app-doughnut-chart></app-doughnut-chart></p>
+            </div>
+            <div class="col-sm-6 total">
+                <p><app-line-chart></app-line-chart></p>
+              </div>
+          </div>
+      </div>
+
+
+<app-day-wise></app-day-wise>
+
+
+
