@@ -29,7 +29,7 @@ export class ChartComponent implements OnInit {
       resp.subscribe((data)=>{
         this.Chart_Data=data; 
         data.forEach(cs=>{
-          if(cs.cases>200000)
+          if(cs.cases>500000)
           datatable.push([
             cs.country,cs.cases
           ])
@@ -41,7 +41,7 @@ export class ChartComponent implements OnInit {
       chartType: 'PieChart',
       dataTable: datatable,
       //firstRowIsData: true,
-      options: {height: 500},
+      options: {height: 500,width:1000},
       
     };
 
@@ -49,7 +49,7 @@ export class ChartComponent implements OnInit {
       chartType: 'ColumnChart',
       dataTable: datatable,
       //firstRowIsData: true,
-      options: {height: 500},
+      options: {height: 500,width:1000},
     };
   }
 
